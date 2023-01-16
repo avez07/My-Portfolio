@@ -1,0 +1,63 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.head-1{
+    position: absolute;
+    bottom: 100px;
+    top: 235px;
+}
+.font-text{
+    font-size: 100px;
+}
+.subtitle{
+    
+    color: #242937 !important;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 130px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    letter-spacing: 2px;
+    padding-left:  195px;
+    
+}
+.title{
+    
+        color: #fff !important;
+        font-family: "Josefin Sans", Sans-serif;
+        font-size: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.2em;
+        letter-spacing: 2px;
+       padding-left: 30px;
+        bottom: -93px;
+        position: relative;
+}
+.progress-bar {
+    background: #38354A !important;
+}
+.progress {
+    background-color: #ffffff12;
+}
+
+@media screen and (max-width: 992px) {
+.img-4{
+    height: 300px;
+}
+.head-1{
+    position: absolute;
+    bottom: 100px;
+    top: 111px;
+}
+.font-text{
+    font-size: 25px;
+}
+.title{
+    position: static;
+    text-align: center;
+    font-size: 40px;
+    padding: 30px;
+}
+
+}
