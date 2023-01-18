@@ -41,7 +41,29 @@
     background-color: #ffffff12;
 }
 
-
+.whatsapp:hover{
+    color: rgb(11, 240, 11);
+}
+.insta:hover{
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100% );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.face:hover{
+    color: #6188ea;
+}
+.linkedin:hover{
+    color:  #0A66C2;
+}
+.git:hover{
+    color: black;
+}
+.tele:hover{
+    color:  #0088cc;
+}
+.mail:hover{
+    color:#e54c31;
+}
 @media screen and (max-width: 992px) {
 .img-4{
     height: 300px;
@@ -49,7 +71,7 @@
 .head-1{
     position: absolute;
     bottom: 100px;
-    top: 111px;
+    top: -69px;
 }
 .font-text{
     font-size: 25px;
@@ -60,5 +82,6 @@
     font-size: 40px;
     padding: 30px;
 }
+
 
 }
