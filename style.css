@@ -57,7 +57,7 @@
 }
 .insta:hover{
     background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100% );
-  -webkit-background-clip: text;
+ -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(1.6);
 	transition: all 0.5s ease-out
@@ -86,14 +86,54 @@
 .logo-link{
     color: white;
 }
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .custom-file-input::before {
+    content: 'UPLOAD FILE';
+    display: inline-block;
+    color: white;
+    padding: 10px 10px 10px 45px;
+    background-color: #0784f2;
+  }
+  .custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }
+.upload{
+    position: relative;
+    top: 38px;
+    right: -6px;
+    color: white;
+    font-size: 27px;
 
+}
+.send{
+    color: red;
+    size: 25px;
+}
+textarea{
+    resize: none;
+    height: 250px;
+    border: none !important;
+}
+.underline{
+    border-bottom:1px solid gray !important;
+    border-radius: 0;
+    outline: none;
+    width: 100%;
+}
+.message{
+    border: none;
+    outline: none;
+    width: 100%;
+}
 @media screen and (max-width: 992px) {
 .img-4{
     height: 300px;
 }
 .head-1{
     position: absolute;
-    bottom: 65px;
+    bottom: 0;
     top: 88px;
 } 
  .font-text{
