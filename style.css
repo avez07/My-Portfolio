@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Solitreo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 *{
     font-family: 'Times New Roman', Times, serif;
     
@@ -21,7 +25,7 @@
 .subtitle{
     
     color: #242937 !important;
-    font-family: "Josefin Sans", Sans-serif;
+    font-family: 'Kaushan Script', cursive;
     font-size: 130px;
     font-weight: 700;
     text-transform: uppercase;
@@ -33,9 +37,10 @@
 .title{
     
         color: #fff !important;
-        font-family: "Josefin Sans", Sans-serif;
+        /* font-family: 'Solitreo', cursive; */
+        font-family: 'Kavoon', cursive;
         font-size: 50px;
-        font-weight: 700;
+       
         text-transform: uppercase;
         line-height: 1.2em;
         letter-spacing: 2px;
@@ -52,6 +57,10 @@
 .soft{
     color: #f7f06a;
     padding: 20px 0 !important;
+}
+.skills-lang{
+        font-family: 'Solitreo', cursive;
+    font-weight: 700 !important;
 }
 .whatsapp:hover{
     color: rgb(11, 240, 11);
@@ -115,12 +124,14 @@
 }
 
 .send{
-    color: rgb(254, 252, 252);
+    color: #ffffff;
     size: 25px;
-   position: relative;
-   top: 72px;
-   right: -245px;
-   font-size: 30px;
+    position: relative;
+    text-align: center;
+    display: block;
+    top: -65px;
+    left: -45px;
+    font-size: 30px;
 }
 
 textarea{
@@ -138,18 +149,60 @@ textarea{
 }
 #contact-us{
     background: linear-gradient(#0d6efd,#54e166  );
+
 }
+.spakales{
+   
+    background: url(images/spakals.png) 52px 85% repeat-x;
+  background-repeat: repeat;
+   
+}
+
+
 .get-in-touch{
     font-size: 70px;
     font-weight: 900;
+    font-family: 'Lobster', cursive;
 }
 .light{
     color:#a5c1ec !important ;
 }
 
 #projects{
-    background: linear-gradient(#c2bfd4,#dbbcdb) !important;
+    background: linear-gradient(#c780e4,#e7879f) !important;
 }
+.cards{
+    transition: box-shadow ,background-color  1s , tranform , 1s;
+    
+}
+.cards:hover{
+
+    box-shadow: 6px 6px 25px rgb(17, 17, 17);
+    transform: scale(1.1);
+    background-color: rgb(255, 222, 73) !important;
+}
+.btn{
+    background-color: #5588f7; /* Green */
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color:  #e24b25;
+
+}
+.project-link{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+.btn:active{
+    transform: scale(0.9);
+    background-color:#7af04b !important;
+}
+
 @media screen and (max-width: 992px) {
 .img-4{
     height: 300px;
