@@ -169,7 +169,13 @@ textarea{
 }
 
 #projects{
-    background: linear-gradient(#c780e4,#e7879f) !important;
+    /* background: linear-gradient(#eacda3 ,#d6ae7b) !important; */
+    /* background: linear-gradient(#eb3349 , #f45c43) !important; */
+    background: linear-gradient( #654ea3, #eaafc8) !important;
+    /* background: linear-gradient( #800080, #ffc0cb) !important; */
+
+
+
 }
 .cards{
     transition: box-shadow ,background-color  1s , tranform , 1s;
