@@ -26,7 +26,7 @@
     
     color: #242937 !important;
     font-family: 'Kaushan Script', cursive;
-    font-size: 130px;
+    font-size: 100px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.2em;
@@ -39,7 +39,7 @@
         color: #fff !important;
         /* font-family: 'Solitreo', cursive; */
         font-family: 'Kavoon', cursive;
-        font-size: 50px;
+        font-size: 45px;
        
         text-transform: uppercase;
         line-height: 1.2em;
@@ -148,7 +148,8 @@ textarea{
     height: 40px;
 }
 #contact-us{
-    background: linear-gradient(#0d6efd,#54e166  );
+    /* background: linear-gradient(#0d6efd,#54e166  ); */
+    background-color: #242937;
 
 }
 .spakales{
@@ -165,16 +166,15 @@ textarea{
     font-family: 'Lobster', cursive;
 }
 .light{
-    color:#a5c1ec !important ;
+    color:#697fa1 !important ;
 }
 
 #projects{
     /* background: linear-gradient(#eacda3 ,#d6ae7b) !important; */
     /* background: linear-gradient(#eb3349 , #f45c43) !important; */
-    background: linear-gradient( #654ea3, #eaafc8) !important;
+    /* background: linear-gradient( #654ea3, #eaafc8) !important; */
     /* background: linear-gradient( #800080, #ffc0cb) !important; */
-
-
+background-color: #ffff !important;
 
 }
 .cards{
@@ -196,7 +196,7 @@ textarea{
     border-radius: 10px;
 }
 .btn:hover{
-    background-color:  #e24b25;
+    background-color:  #86a8f1;
 
 }
 .project-link{
@@ -208,7 +208,16 @@ textarea{
     transform: scale(0.9);
     background-color:#7af04b !important;
 }
-
+.scroll-top{
+    color: red;
+    font-size: 300px;
+    float: right;
+    
+}
+.inverted {
+    background-color: #242937;
+    box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1);
+}
 @media screen and (max-width: 992px) {
 .img-4{
     height: 300px;

@@ -18,9 +18,9 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-light  head fixed-top">
+  <nav class="navbar navbar-expand-lg bg-body-light  head fixed-top" id="head">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      <button  id="toggle" onclick="toggle()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -284,7 +284,7 @@
             <img src="images/projects/projects-1.jpg" class="card-img-top p-3" alt="...">
             <div class="card-body">
               <p class="card-title fs-4 fw-bold">Landing page 6 November 2022</p>
-              <button type="button" class="btn mb-4"style="margin-top:30px; style="margin-top: 30px;"" > <a href=" https://avez07.github.io/Landing-page-using-html/" target="_blank" class="project-link">Click here to visit</a></button>
+              <button type="button" class="btn mb-4"style="margin-top:30px;"> <a href=" https://avez07.github.io/Landing-page-using-html/" target="_blank" class="project-link">Click here to visit</a></button>
               <p class="fw-semibold text-uppercase fs-5">HTML5 , VSCODE</p>
             </div>
           </div>
@@ -389,7 +389,7 @@
   <section id="contact-us">
     <div class="container-fluid px-4 py-5  spakales">
       <div class="row ">
-        <p class="title" style="color: black !important;">Contact Me</p>
+        <p class="title" style="color: #ffff !important;">Contact Me</p>
         <div class="section-tittle">
           <h2 class="subtitle d-none d-lg-block light">Contacts</h2>
         </div>
@@ -435,11 +435,18 @@
           </form>
         </div>
       </div>
+      
     </div>
+   
   </section>
+  <div style="position: fixed;">
+    <i class="fa-solid fa-circle-arrow-up scroll-top"></i>
+  </div>
+  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+
 
 </body>
 
