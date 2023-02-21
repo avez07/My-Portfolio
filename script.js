@@ -10,5 +10,12 @@ window.onscroll = function() {
   }
 }
 function toggle(){
-     document.getElementById("head").style.backgroundColor = "#242937"
+  var  tog = document.getElementById("toggle")
+if(tog = true){
+  document.getElementById("head").classList.add(className) 
+}
+else if(tog = false){
+  document.getElementById("head").classList.remove(className) 
+  
+}
 }

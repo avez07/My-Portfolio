@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 *{
     font-family: 'Times New Roman', Times, serif;
     
@@ -24,23 +25,23 @@
 }
 .subtitle{
     
-    color: #242937 !important;
+    color: #353b4d !important;
     font-family: 'Kaushan Script', cursive;
-    font-size: 100px;
-    font-weight: 700;
+    font-size: 90px;
+    font-weight: 500;
     text-transform: uppercase;
     line-height: 1.2em;
     letter-spacing: 2px;
     padding-left:  195px;
+
     
 }
 .title{
     
         color: #fff !important;
         /* font-family: 'Solitreo', cursive; */
-        font-family: 'Kavoon', cursive;
-        font-size: 45px;
-       
+        font-family: 'Courgette', cursive;
+        font-size: 45px;       
         text-transform: uppercase;
         line-height: 1.2em;
         letter-spacing: 2px;
@@ -178,35 +179,38 @@ background-color: #ffff !important;
 
 }
 .cards{
-    transition: box-shadow ,background-color  1s , tranform , 1s;
+    transition: box-shadow ,background-color  1s ;
+    
     
 }
 .cards:hover{
 
     box-shadow: 6px 6px 25px rgb(17, 17, 17);
-    transform: scale(1.1);
     background-color: rgb(255, 222, 73) !important;
 }
-.btn{
-    background-color: #5588f7; /* Green */
-    border: none;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 10px;
-}
+
 .btn:hover{
     background-color:  #86a8f1;
 
 }
+.btn{
+    border-collapse: collapse;
+    margin: 15px 0;
+}
 .project-link{
     color: white;
     text-decoration: none;
-    font-size: 22px;
+    padding: 7px 10px;
+    background-color: #5588f7; 
+    border: none !important;
+    text-align: center;
+  
+    font-size: 19px;
+    border-radius: 5px;
 }
 .btn:active{
     transform: scale(0.9);
-    background-color:#7af04b !important;
+    background-color:#5588f7 !important;
 }
 .scroll-top{
     color: red;
@@ -217,6 +221,17 @@ background-color: #ffff !important;
 .inverted {
     background-color: #242937;
     box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1);
+}
+.pro-tex{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+.pro-head{
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
 }
 @media screen and (max-width: 992px) {
 .img-4{
