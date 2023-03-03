@@ -20,7 +20,7 @@
     z-index: 11;
 }
 .font-text{
-    font-size: 100px;
+    font-size: 75px;
     margin-bottom: 0;
 }
 .subtitle{
@@ -56,7 +56,7 @@
     background-color: #ffffff12;
 }
 .soft{
-    color: #f7f06a;
+    color: #d1c968;
     padding: 20px 0 !important;
 }
 .skills-lang{
@@ -212,15 +212,19 @@ background-color: #ffff !important;
     transform: scale(0.9);
     background-color:#5588f7 !important;
 }
-.scroll-top{
+#scroll{
     color: red;
-    font-size: 300px;
+    font-size: 40px;
     float: right;
+    position: fixed;
+    display: block;
+    bottom: 40px;
+    right: 45px;
     
 }
 .inverted {
     background-color: #242937;
-    box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 5px 0.3px #0000001a;
 }
 .pro-tex{
     font-size: 15px;
@@ -233,6 +237,21 @@ background-color: #ffff !important;
     font-weight: 800;
     text-transform: capitalize;
 }
+#cursor {
+    display: inline-block;
+    animation: blink 0.7s infinite;
+  }
+  
+  /* CSS for animation */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink {
+    from, to { color: transparent }
+    100% { color: #ffffff }
+  }
 @media screen and (max-width: 992px) {
 .img-4{
     height: 300px;
