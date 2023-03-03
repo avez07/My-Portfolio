@@ -10,63 +10,70 @@ let top = document.getElementById("scroll");
   } else {
     document.getElementById("head").classList.remove(className);
   }
-  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     top.style.display = "block";
   } else {
     top.style.display = "none";
   }
 }
-const textArray = ["Example sentence one.", "Example sentence two.", "Example sentence three."];
-const typingDelay = 100; // Delay in milliseconds between typing each character
-const deletingDelay = 50; // Delay in milliseconds between deleting each character
-const newTextDelay = 2000; // Delay in milliseconds before typing new text
-let textIndex = 0;
-let charIndex = 0;
-let cursorVisible = true;
- var ty = document.getElementsByClassName("font-text-1");
-
-function type() {
-  const currentText = textArray[0];
-  if (charIndex < currentText.length) {
-    for(i= 0 ; i < ty.length ; i++){
-    ty[i].innerHTML += currentText.charAt(charIndex);
-    
-    charIndex++;
-    
-    
-    setTimeout(type, typingDelay);
-    }
-  } else {
-    setTimeout(erase, newTextDelay);
-  }
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-function erase() {
-  if (charIndex > 0) {
-    for(i= 0 ; i < ty.length ; i++){
-      ty[i].innerHTML = ty[i].innerHTML.slice(0, -1);
-    
-    charIndex--;
-    
-    setTimeout(erase, deletingDelay);
+// Define an array of text strings to be typed out
+const textArray = ["THIS IS  MY PORTFOLIO WEBSITE","PROGRAMMER", "FRONTEND DEVELOPER"];
+
+// Define the speed at which the text is typed and deleted
+const typingSpeed = 170;
+const deletingSpeed = 60;
+
+// Loop through each element with class name "font-text-1"
+const elements = document.querySelectorAll('.font-text-1');
+for (let i = 0; i < elements.length; i++) {
+  const element = elements[i];
+  let textIndex = 0;
+  let deleting = false;
+
+  // Create a blinking cursor element
+  const cursor = document.createElement('span');
+  cursor.className = 'cursor';
+  cursor.textContent = '|';
+
+  // Append the cursor element to the text element
+  element.appendChild(cursor);
+
+  // Define a function to type out the text
+  function type() {
+    const text = textArray[textIndex];
+    const currentText = element.textContent;
+    const currentLength = currentText.length;
+
+    // If deleting, remove one character at a time
+    if (deleting) {
+      element.textContent = currentText.substring(0, currentLength - 1);
+      if (currentLength === 1) {
+        deleting = false;
+        textIndex = (textIndex + 1) % textArray.length;        
+      }
+      
     }
-  } else {
-    textIndex++;
-    if (textIndex >= textArray.length) {
-      textIndex = 0;
+
+    // If typing, add one character at a time
+    else {
+      element.textContent = text.substring(0, currentLength + 1);
+      if (currentLength === text.length - 1) {
+        deleting = true;
+      }
     }
-    setTimeout(type, typingDelay);
+
+    // Use setTimeout to call this function again after the specified delay
+    setTimeout(type, deleting ? deletingSpeed : typingSpeed);
+    
   }
+
+  // Call the type function to start the typing effect
+  type();
 }
 
-function blinkCursor() {
-  const cursor = document.getElementsByClassName("cursor-1");
-  for(i= 0 ; i < cursor.length ; i++){
-  cursorVisible = !cursorVisible;
-  cursor.style.opacity = cursorVisible ? "1" : "0";
-  }
-  setTimeout(blinkCursor, 500);
-}
 
-type();
-blinkCursor();

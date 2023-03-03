@@ -166,15 +166,7 @@ textarea{
     font-weight: 900;
     font-family: 'Lobster', cursive;
 }
-.light{
-    color:#697fa1 !important ;
-}
-
 #projects{
-    /* background: linear-gradient(#eacda3 ,#d6ae7b) !important; */
-    /* background: linear-gradient(#eb3349 , #f45c43) !important; */
-    /* background: linear-gradient( #654ea3, #eaafc8) !important; */
-    /* background: linear-gradient( #800080, #ffc0cb) !important; */
 background-color: #ffff !important;
 
 }
@@ -189,10 +181,7 @@ background-color: #ffff !important;
     background-color: rgb(255, 222, 73) !important;
 }
 
-.btn:hover{
-    background-color:  #86a8f1;
 
-}
 .btn{
     border-collapse: collapse;
     margin: 15px 0;
@@ -208,9 +197,20 @@ background-color: #ffff !important;
     font-size: 19px;
     border-radius: 5px;
 }
-.btn:active{
+.project-link:hover {
+    color: #ffff;
+    background-color: #000000;
+    transition: background-color ,0.5s;
+
+}
+.project-link:active{
     transform: scale(0.9);
     background-color:#5588f7 !important;
+    
+}
+
+.btn:active{
+    border: none;
 }
 #scroll{
     color: red;
@@ -223,8 +223,10 @@ background-color: #ffff !important;
     
 }
 .inverted {
-    background-color: #242937;
+    background-color: #242937a9;
     box-shadow: 0 3px 5px 0.3px #0000001a;
+    backdrop-filter: blur(15px) !important;
+  
 }
 .pro-tex{
     font-size: 15px;
