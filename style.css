@@ -50,7 +50,7 @@
         position: relative;
 }
 .progress-bar {
-    background: #344a89 !important;
+    background:#18677c !important;
 }
 .progress {
     background-color: #ffffff12;
@@ -149,18 +149,9 @@ textarea{
     height: 40px;
 }
 #contact-us{
-    /* background: linear-gradient(#0d6efd,#54e166  ); */
     background-color: #242937;
 
 }
-.spakales{
-   
-    background: url(images/spakals.png) 52px 85% repeat-x;
-  background-repeat: repeat;
-   
-}
-
-
 .get-in-touch{
     font-size: 70px;
     font-weight: 900;
@@ -254,6 +245,30 @@ background-color: #ffff !important;
     position:static;
     padding: 10px;
   }
+  .hire{
+     background: linear-gradient(to bottom left, #f271f2 9%, #7adffb 93%);
+     font-size: 32px;
+     font-weight: 600;
+     border: none;
+     border-radius: 5px;
+     padding: 5px 17px;
+  }
+  .cv{
+    background: transparent;
+     font-size: 30px;
+     font-weight: 600;
+     margin-right: 30px;
+     border: 3px solid #b09aef;
+     border-radius: 5px;
+     padding: 5px 17px;
+
+     color: #ffffff;
+
+  }
+  .hire-i{
+    font-size: 28px;
+    padding-right: 7px;
+  }
   
   /* CSS for animation */
   @keyframes typing {
@@ -311,7 +326,7 @@ background-color: #ffff !important;
    justify-content: right;
    padding-right: 20px;
    margin-bottom: 50px;
-   font-size: 35px;
+   font-size: 40px;
 }
 
   .owl-next , .owl-prev{
@@ -327,5 +342,29 @@ background-color: #ffff !important;
     font-family: 'Times New Roman', Times, serif;
     padding-left: 15px;
   }
+  .hire{
+    background: linear-gradient(to bottom left, #f271f2 9%, #7adffb 93%);
+    font-size: 23px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 12px;
+ }
+ .cv{
+   background: transparent;
+    font-size: 21px;
+    font-weight: 600;
+    margin-right: 15px;
+    border: 3px solid #b09aef;
+    border-radius: 5px;
+    padding: 5px 12px;
+
+    color: #ffffff;
+
+ }
+ .hire-i{
+   font-size: 18px;
+   padding-right: 7px;
+ }
   
 }
