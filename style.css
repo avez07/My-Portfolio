@@ -168,10 +168,10 @@ background-color: #ffff !important;
 }
 .cards:hover{
 
-    box-shadow: 6px 6px 25px rgb(17, 17, 17);
-    background-color: rgb(255, 222, 73) !important;
+    box-shadow: 6px 6px 25px #dad9d9;
+    border: 1px solid #e4e2e2;
+   
 }
-
 
 .btn{
     border-collapse: collapse;
