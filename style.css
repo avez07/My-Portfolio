@@ -49,6 +49,11 @@
         bottom: -93px;
         position: relative;
 }
+.abiut-text{
+    font-size: 21.5px;
+    margin: auto auto 30px auto !important;
+ }
+
 .progress-bar {
     background:#18677c !important;
 }
@@ -367,4 +372,9 @@ background-color: #ffff !important;
    padding-right: 7px;
  }
   
+}
+@media screen and (max-width: 768px) {
+ .abiut-text{
+    font-size: 18px;
+ }
 }
