@@ -670,26 +670,26 @@
             </div>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Enter Your Name</label>
-              <input type="text" class="form-control underline" id="exampleInputPassword1" placeholder="Name"
+              <input type="text" class="form-control underline" id="e-name" placeholder="Name"
                 aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Enter your Email</label><br>
               <input type="email" class="form-control underline text-1" placeholder="example@gmail.com"
-                id="exampleInputEmail1">
+                id="email">
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Enter your number</label><br>
               <input type="number" class="form-control underline text-1" placeholder="EnterYour phone_number"
-                id="exampleInputEmail1">
+                id="phone">
             </div>
             <div class="text">
-              <textarea type="email" class="form-control message" id="exampleInputPassword1"
+              <textarea type="email" class="form-control message" id="message-area"
                 placeholder="Enter Your Message"></textarea>
             </div>
 
             <div class=" d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary fs-3 rounded-5 fw-semibold ps-5 my-4"> SEND </button>
+            <button type="submit" onclick="sendEmail()" class="btn btn-primary fs-3 rounded-5 fw-semibold ps-5 my-4"> SEND </button>
             </div>
             <span><i class="fa-solid fa-paper-plane send"></i></span>
           </form>
