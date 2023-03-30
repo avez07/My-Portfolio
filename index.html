@@ -663,36 +663,34 @@
 
         </div>
         <div class="col-lg-6 col-md-7 offset-lg-1">
-          <form class=" p-3 rounded-4" style="background-color: white;">
+          <form class="p-3 rounded-4" onsubmit="return sendEmail()" style="background-color: white;">
             <div>
-              <p class="get-in-touch text-center"><span
-                  style="color: blue; font-family: 'Lobster', cursive;">GET</span> IN TOUCH</p>
+              <p class="get-in-touch text-center">
+                <span style="color: blue; font-family: 'Lobster', cursive;">GET</span> IN TOUCH
+              </p>
             </div>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Enter Your Name</label>
-              <input type="text" class="form-control underline" id="e-name" placeholder="Name"
-                aria-describedby="emailHelp">
+              <input type="text" class="form-control underline" name="name" id="e-name" placeholder="Name" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Enter your Email</label><br>
-              <input type="email" class="form-control underline text-1" placeholder="example@gmail.com"
-                id="email">
+              <input type="email" name="email" class="form-control underline text-1" placeholder="example@gmail.com" id="email">
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Enter your number</label><br>
-              <input type="number" class="form-control underline text-1" placeholder="EnterYour phone_number"
-                id="phone">
+              <input type="number" name="phone" class="form-control underline text-1" placeholder="EnterYour phone_number" id="phone">
             </div>
             <div class="text">
-              <textarea type="email" class="form-control message" id="message-area"
-                placeholder="Enter Your Message"></textarea>
+              <textarea type="email" class="form-control message" name="message" id="message-area" placeholder="Enter Your Message"></textarea>
             </div>
-
-            <div class=" d-flex justify-content-center">
-            <button type="submit" onclick="sendEmail()" class="btn btn-primary fs-3 rounded-5 fw-semibold ps-5 my-4"> SEND </button>
+          
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-primary fs-3 rounded-5 fw-semibold ps-5 my-4">SEND</button>
             </div>
             <span><i class="fa-solid fa-paper-plane send"></i></span>
           </form>
+          
         </div>
       </div>
     </div>
@@ -712,6 +710,8 @@
 <script>
 AOS.init();
 </script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
 
 
   

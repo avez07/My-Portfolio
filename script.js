@@ -82,18 +82,25 @@ function sendEmail() {
   let phone = document.getElementById("phone").value;
   let message = document.getElementById("message-area").value;
   let finalmessage = `Name : ${name} <br>  Email : ${email} <br>  phone : ${phone} <br>  Message : ${message} <br>`;
+
   Email.send({
-      Host : "smtp.mailtrap.io",
-      Username : "username",
-      Password : "password",
-      To : 'them@website.com',
-      From : "you@isp.com",
-      Subject : "Mail from website",
-      Body : finalmessage
-  }).then(
-    message => alert(message)
-  );
+    SecureToken: "74ba9236-5ebc-42e8-bb63-04bcae3740b9",
+    To: "ansriaavez12345@gmail.com",
+    From: "myportfolio@gmail.com",
+    Subject: "This is the subject",
+    Body: finalmessage,
+  }).then((message) => {
+    if (message === "OK") {
+      alert("Message sent successfully.");
+    } else {
+      alert("Error: " + message);
+    }
+  });
+
+  return false; // prevent the form from submitting
 }
+
+ 
 
 
 
