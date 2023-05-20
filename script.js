@@ -22,7 +22,7 @@ function topFunction() {
 }
 
 // Define an array of text strings to be typed out
-const textArray = ["THIS IS  MY PORTFOLIO WEBSITE","PROGRAMMER", "FRONTEND DEVELOPER"];
+const textArray = ["THIS IS  MY PORTFOLIO WEBSITE","PROGRAMMER", "FRONTEND DEVELOPER", "BACKEND DEVELOPER"];
 
 // Define the speed at which the text is typed and deleted
 const typingSpeed = 170;
@@ -76,29 +76,7 @@ for (let i = 0; i < elements.length; i++) {
   type();
 }
 
-function sendEmail() {
-  let name = document.getElementById("e-name").value;
-  let email = document.getElementById("email").value;
-  let phone = document.getElementById("phone").value;
-  let message = document.getElementById("message-area").value;
-  let finalmessage = `Name : ${name} <br>  Email : ${email} <br>  phone : ${phone} <br>  Message : ${message} <br>`;
 
-  Email.send({
-    SecureToken: "74ba9236-5ebc-42e8-bb63-04bcae3740b9",
-    To: "ansriaavez12345@gmail.com",
-    From: "myportfolio@gmail.com",
-    Subject: "This is the subject",
-    Body: finalmessage,
-  }).then((message) => {
-    if (message === "OK") {
-      alert("Message sent successfully.");
-    } else {
-      alert("Error: " + message);
-    }
-  });
-
-  return false; // prevent the form from submitting
-}
 
  
 
